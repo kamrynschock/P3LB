@@ -1,20 +1,23 @@
 #include "RequestQueue.h"
 
 void RequestQueue::enqueue(const Request& request) {
-    // TODO
+    queue.push(request);
 }
 
 Request RequestQueue::dequeue() {
-    // TODO
-    return Request("", "", 0, 'P', 0);
+    if (queue.empty()) {
+        return Request("", "", 0, 'P', 0); // return default/empty request if queue is empty
+    }
+
+    Request request = queue.front();
+    queue.pop();
+    return request;
 }
 
 bool RequestQueue::isEmpty() const {
-    // TODO
-    return true;
+    return queue.empty();
 }
 
 int RequestQueue::size() const {
-    // TODO
-    return 0;
+    return queue.size();
 }
