@@ -2,19 +2,39 @@
 
 WebServer::WebServer(int id)
     : id(id),
-      busy(true),
+      busy(false),
       remainingTime(0),
       currentRequest("", "", 0, 'P', 0) {}
 
 bool WebServer::isIdle() const {
-    // TODO
-    return true;
+    return !busy;
 }
 
 void WebServer::assignRequest(const Request& request) {
-    // iTODO
+    if (!busy) {
+        currentRequest = request;
+        remainingTime = request.getProcessingTime();
+        busy = true;
+    }
 }
 
 void WebServer::processCycle() {
-    // TODO
+    if (busy && remainingTime > 0) {
+        remainingTime--;
+        if (remainingTime == 0) {
+            busy = false;
+        }
+    }
+}
+
+int WebServer::getId() const {
+    return id;
+}
+
+Request WebServer::getCurrentRequest() const {
+    return currentRequest;
+}
+
+int WebServer::getRemainingTime() const {
+    return remainingTime;
 }

@@ -7,10 +7,13 @@
 class WebServer {
 public:
     WebServer(int id);
-
+    
     bool isIdle() const;
     void assignRequest(const Request& request);
     void processCycle();
+    int getId() const;
+    Request getCurrentRequest() const;
+    int getRemainingTime() const;
 
 private:
     int id;
