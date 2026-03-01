@@ -1,4 +1,5 @@
 #include "LoadBalancer.h"
+#include "Config.h"
 #include <iostream>
 #include <random>
 #include <algorithm>
@@ -14,24 +15,40 @@ const std::string CYAN = "\033[36m";
 const std::string MAGENTA = "\033[35m";
 const std::string RESET = "\033[0m";
 
-LoadBalancer::LoadBalancer(int initialServers, int cooldown)
-    : clock(0),
-      cooldown(cooldown),
+LoadBalancer::LoadBalancer(int initialServers, int cooldown, const std::string& configFile)
+    : config(configFile),
+      clock(0),
       lastScaleTime(0) {
     
-    // logs directory
+    // use config values (with command line overrides)
+    int servers = (initialServers > 0) ? initialServers : config.getInt("initial_servers", 10);
+    this->cooldown = (cooldown > 0) ? cooldown : config.getInt("scaling_cooldown", 10);
+    
+    // load other config values
+    minRequestsPerCycle = config.getInt("min_requests_per_cycle", 5);
+    maxRequestsPerCycle = config.getInt("max_requests_per_cycle", 15);
+    minProcessingTime = config.getInt("min_processing_time", 1);
+    maxProcessingTime = config.getInt("max_processing_time", 10);
+    lowerThresholdMultiplier = config.getInt("lower_threshold_multiplier", 50);
+    upperThresholdMultiplier = config.getInt("upper_threshold_multiplier", 80);
+    logInterval = config.getInt("log_interval", 1000);
+    firewallEnabled = config.getBool("enable_firewall", true);
+    
+    // create logs directory if it doesn't exist
     std::filesystem::create_directories("logs");
     
     // create initial servers
-    for (int i = 0; i < initialServers; i++) {
-        servers.emplace_back(i);
+    for (int i = 0; i < servers; i++) {
+        this->servers.emplace_back(i);
     }
     
     // generate initial full queue (servers * 100)
-    generateRequests(initialServers * 100);
+    generateRequests(servers * 100);
     
-    std::cout << "LoadBalancer initialized with " << initialServers << " servers" << std::endl;
-    logEvent("LoadBalancer initialized with " + std::to_string(initialServers) + " servers");
+    std::cout << "LoadBalancer initialized with " << servers << " servers" << std::endl;
+    logEvent("LoadBalancer initialized with " + std::to_string(servers) + " servers");
+    
+    config.printConfig();
 }
 
 void LoadBalancer::runSimulation(int cycles) {
@@ -97,16 +114,16 @@ void LoadBalancer::generateRequests(int count) {
                             std::to_string(ipDist(gen)) + "." + 
                             std::to_string(ipDist(gen));
         
-        // generate processing time (1-10 cycles)
-        std::uniform_int_distribution<> timeDist(1, 10);
+        // use config values for processing time
+        std::uniform_int_distribution<> timeDist(minProcessingTime, maxProcessingTime);
         int processingTime = timeDist(gen);
         
         // generate job type (P or S)
         std::uniform_int_distribution<> typeDist(0, 1);
         char jobType = typeDist(gen) == 0 ? 'P' : 'S';
         
-        // check for blocked IPs before adding to queue
-        if (!blockIP(ipIn)) {
+        // check for blocked IPs (if firewall enabled)
+        if (!firewallEnabled || !blockIP(ipIn)) {
             Request newRequest(ipIn, ipOut, processingTime, jobType, clock);
             requestQueue.enqueue(newRequest);
         }
@@ -126,8 +143,8 @@ void LoadBalancer::dispatchRequests() {
 void LoadBalancer::scaleServers() {
     int queueSize = requestQueue.size();
     int serverCount = servers.size();
-    int lowerThreshold = 50 * serverCount;
-    int upperThreshold = 80 * serverCount;
+    int lowerThreshold = lowerThresholdMultiplier * serverCount;
+    int upperThreshold = upperThresholdMultiplier * serverCount;
     
     if (queueSize < lowerThreshold && serverCount > 1) {
         removeServer();

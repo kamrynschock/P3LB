@@ -5,8 +5,8 @@ CXXFLAGS = -Wall -Werror -std=c++17 -Iinclude
 # define targets
 all: loadbalancer
 
-loadbalancer: main.o Request.o RequestQueue.o WebServer.o LoadBalancer.o
-	$(CXX) $(CXXFLAGS) -o loadbalancer main.o Request.o RequestQueue.o WebServer.o LoadBalancer.o
+loadbalancer: main.o Request.o RequestQueue.o WebServer.o LoadBalancer.o Config.o
+	$(CXX) $(CXXFLAGS) -o loadbalancer main.o Request.o RequestQueue.o WebServer.o LoadBalancer.o Config.o
 
 # rules for object files
 main.o: src/main.cpp
@@ -23,6 +23,9 @@ WebServer.o: src/WebServer.cpp
 
 LoadBalancer.o: src/LoadBalancer.cpp
 	$(CXX) $(CXXFLAGS) -c src/LoadBalancer.cpp
+
+Config.o: src/Config.cpp include/Config.h
+	$(CXX) $(CXXFLAGS) -c src/Config.cpp
 
 # clean target
 clean:
