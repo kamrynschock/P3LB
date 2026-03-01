@@ -1,0 +1,61 @@
+[Cycle 000000] LoadBalancer initialized with 10 servers
+[Cycle 000000] Starting simulation for 10000 cycles
+[Cycle 000001] Status - Cycle: 0, Queue: 1002, Servers: 10
+[Cycle 000010] Scaled UP - Queue: 1091, Servers: 11, Threshold: 800
+[Cycle 000020] Scaled UP - Queue: 1190, Servers: 12, Threshold: 880
+[Cycle 000030] Scaled UP - Queue: 1285, Servers: 13, Threshold: 960
+[Cycle 000040] Scaled UP - Queue: 1367, Servers: 14, Threshold: 1040
+[Cycle 000050] Scaled UP - Queue: 1455, Servers: 15, Threshold: 1120
+[Cycle 000060] Scaled UP - Queue: 1525, Servers: 16, Threshold: 1200
+[Cycle 000070] Scaled UP - Queue: 1584, Servers: 17, Threshold: 1280
+[Cycle 000080] Scaled UP - Queue: 1643, Servers: 18, Threshold: 1360
+[Cycle 000090] Scaled UP - Queue: 1708, Servers: 19, Threshold: 1440
+[Cycle 000100] Scaled UP - Queue: 1777, Servers: 20, Threshold: 1520
+[Cycle 000110] Scaled UP - Queue: 1829, Servers: 21, Threshold: 1600
+[Cycle 000120] Scaled UP - Queue: 1894, Servers: 22, Threshold: 1680
+[Cycle 000130] Scaled UP - Queue: 1955, Servers: 23, Threshold: 1760
+[Cycle 000140] Scaled UP - Queue: 2006, Servers: 24, Threshold: 1840
+[Cycle 000150] Scaled UP - Queue: 2064, Servers: 25, Threshold: 1920
+[Cycle 000160] Scaled UP - Queue: 2115, Servers: 26, Threshold: 2000
+[Cycle 000170] Scaled UP - Queue: 2160, Servers: 27, Threshold: 2080
+[Cycle 000180] Scaled UP - Queue: 2212, Servers: 28, Threshold: 2160
+[Cycle 000192] Scaled UP - Queue: 2242, Servers: 29, Threshold: 2240
+[Cycle 000206] Scaled UP - Queue: 2324, Servers: 30, Threshold: 2320
+[Cycle 000224] Scaled UP - Queue: 2402, Servers: 31, Threshold: 2400
+[Cycle 000246] Scaled UP - Queue: 2491, Servers: 32, Threshold: 2480
+[Cycle 000261] Scaled UP - Queue: 2565, Servers: 33, Threshold: 2560
+[Cycle 000286] Scaled UP - Queue: 2646, Servers: 34, Threshold: 2640
+[Cycle 000302] Scaled UP - Queue: 2724, Servers: 35, Threshold: 2720
+[Cycle 000321] Scaled UP - Queue: 2803, Servers: 36, Threshold: 2800
+[Cycle 000340] Scaled UP - Queue: 2881, Servers: 37, Threshold: 2880
+[Cycle 000367] Scaled UP - Queue: 2961, Servers: 38, Threshold: 2960
+[Cycle 000387] Scaled UP - Queue: 3044, Servers: 39, Threshold: 3040
+[Cycle 000413] Scaled UP - Queue: 3121, Servers: 40, Threshold: 3120
+[Cycle 000455] Scaled UP - Queue: 3209, Servers: 41, Threshold: 3200
+[Cycle 000479] Scaled UP - Queue: 3285, Servers: 42, Threshold: 3280
+[Cycle 000511] Scaled UP - Queue: 3365, Servers: 43, Threshold: 3360
+[Cycle 000536] Scaled UP - Queue: 3443, Servers: 44, Threshold: 3440
+[Cycle 000565] Scaled UP - Queue: 3522, Servers: 45, Threshold: 3520
+[Cycle 000575] BLOCKED IP: 192.168.116.30 (suspicious range)
+[Cycle 000606] Scaled UP - Queue: 3601, Servers: 46, Threshold: 3600
+[Cycle 000669] Scaled UP - Queue: 3688, Servers: 47, Threshold: 3680
+[Cycle 000714] Scaled UP - Queue: 3766, Servers: 48, Threshold: 3760
+[Cycle 000788] Scaled UP - Queue: 3847, Servers: 49, Threshold: 3840
+[Cycle 000845] Scaled UP - Queue: 3923, Servers: 50, Threshold: 3920
+[Cycle 000974] Scaled UP - Queue: 4009, Servers: 51, Threshold: 4000
+[Cycle 001001] Status - Cycle: 1000, Queue: 4048, Servers: 51
+[Cycle 001042] Scaled UP - Queue: 4084, Servers: 52, Threshold: 4080
+[Cycle 001146] Scaled UP - Queue: 4162, Servers: 53, Threshold: 4160
+[Cycle 001254] Scaled UP - Queue: 4243, Servers: 54, Threshold: 4240
+[Cycle 001550] Scaled UP - Queue: 4322, Servers: 55, Threshold: 4320
+[Cycle 001622] Scaled UP - Queue: 4402, Servers: 56, Threshold: 4400
+[Cycle 002001] Status - Cycle: 2000, Queue: 4363, Servers: 56
+[Cycle 003001] Status - Cycle: 3000, Queue: 4138, Servers: 56
+[Cycle 004001] Status - Cycle: 4000, Queue: 3788, Servers: 56
+[Cycle 005001] Status - Cycle: 5000, Queue: 3664, Servers: 56
+[Cycle 006001] Status - Cycle: 6000, Queue: 3521, Servers: 56
+[Cycle 006599] BLOCKED IP: 192.168.189.178 (suspicious range)
+[Cycle 007001] Status - Cycle: 7000, Queue: 3446, Servers: 56
+[Cycle 008001] Status - Cycle: 8000, Queue: 3333, Servers: 56
+[Cycle 009001] Status - Cycle: 9000, Queue: 2972, Servers: 56
+[Cycle 010000] Simulation completed - Final queue: 2905, Final servers: 56
