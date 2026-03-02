@@ -1,119 +1,62 @@
 [Cycle 000000] LoadBalancer initialized with 10 servers
 [Cycle 000000] Starting simulation for 10000 cycles
-[Cycle 000001] Status - Cycle: 0, Queue: 1002, Servers: 10
-[Cycle 000010] Scaled UP - Queue: 1091, Servers: 11, Threshold: 800
-[Cycle 000020] Scaled UP - Queue: 1190, Servers: 12, Threshold: 880
-[Cycle 000030] Scaled UP - Queue: 1285, Servers: 13, Threshold: 960
-[Cycle 000040] Scaled UP - Queue: 1367, Servers: 14, Threshold: 1040
-[Cycle 000050] Scaled UP - Queue: 1455, Servers: 15, Threshold: 1120
-[Cycle 000060] Scaled UP - Queue: 1525, Servers: 16, Threshold: 1200
-[Cycle 000070] Scaled UP - Queue: 1584, Servers: 17, Threshold: 1280
-[Cycle 000080] Scaled UP - Queue: 1643, Servers: 18, Threshold: 1360
-[Cycle 000090] Scaled UP - Queue: 1708, Servers: 19, Threshold: 1440
-[Cycle 000100] Scaled UP - Queue: 1777, Servers: 20, Threshold: 1520
-[Cycle 000110] Scaled UP - Queue: 1829, Servers: 21, Threshold: 1600
+[Cycle 000001] Status - Cycle: 0, Queue: 1000, Servers: 10
+[Cycle 000010] Scaled UP - Queue: 1078, Servers: 11, Threshold: 800
+[Cycle 000020] Scaled UP - Queue: 1174, Servers: 12, Threshold: 880
+[Cycle 000030] Scaled UP - Queue: 1253, Servers: 13, Threshold: 960
+[Cycle 000040] Scaled UP - Queue: 1317, Servers: 14, Threshold: 1040
+[Cycle 000050] Scaled UP - Queue: 1400, Servers: 15, Threshold: 1120
+[Cycle 000060] Scaled UP - Queue: 1456, Servers: 16, Threshold: 1200
+[Cycle 000070] Scaled UP - Queue: 1519, Servers: 17, Threshold: 1280
+[Cycle 000080] Scaled UP - Queue: 1604, Servers: 18, Threshold: 1360
+[Cycle 000090] Scaled UP - Queue: 1683, Servers: 19, Threshold: 1440
+[Cycle 000100] Scaled UP - Queue: 1763, Servers: 20, Threshold: 1520
+[Cycle 000110] Scaled UP - Queue: 1835, Servers: 21, Threshold: 1600
 [Cycle 000120] Scaled UP - Queue: 1894, Servers: 22, Threshold: 1680
-[Cycle 000130] Scaled UP - Queue: 1955, Servers: 23, Threshold: 1760
-[Cycle 000140] Scaled UP - Queue: 2006, Servers: 24, Threshold: 1840
-[Cycle 000150] Scaled UP - Queue: 2064, Servers: 25, Threshold: 1920
-[Cycle 000160] Scaled UP - Queue: 2115, Servers: 26, Threshold: 2000
-[Cycle 000170] Scaled UP - Queue: 2160, Servers: 27, Threshold: 2080
-[Cycle 000180] Scaled UP - Queue: 2212, Servers: 28, Threshold: 2160
-[Cycle 000192] Scaled UP - Queue: 2242, Servers: 29, Threshold: 2240
-[Cycle 000206] Scaled UP - Queue: 2324, Servers: 30, Threshold: 2320
-[Cycle 000224] Scaled UP - Queue: 2402, Servers: 31, Threshold: 2400
-[Cycle 000246] Scaled UP - Queue: 2491, Servers: 32, Threshold: 2480
-[Cycle 000261] Scaled UP - Queue: 2565, Servers: 33, Threshold: 2560
-[Cycle 000286] Scaled UP - Queue: 2646, Servers: 34, Threshold: 2640
-[Cycle 000302] Scaled UP - Queue: 2724, Servers: 35, Threshold: 2720
-[Cycle 000321] Scaled UP - Queue: 2803, Servers: 36, Threshold: 2800
-[Cycle 000340] Scaled UP - Queue: 2881, Servers: 37, Threshold: 2880
-[Cycle 000367] Scaled UP - Queue: 2961, Servers: 38, Threshold: 2960
-[Cycle 000387] Scaled UP - Queue: 3044, Servers: 39, Threshold: 3040
-[Cycle 000413] Scaled UP - Queue: 3121, Servers: 40, Threshold: 3120
-[Cycle 000455] Scaled UP - Queue: 3209, Servers: 41, Threshold: 3200
-[Cycle 000479] Scaled UP - Queue: 3285, Servers: 42, Threshold: 3280
-[Cycle 000511] Scaled UP - Queue: 3365, Servers: 43, Threshold: 3360
-[Cycle 000536] Scaled UP - Queue: 3443, Servers: 44, Threshold: 3440
-[Cycle 000565] Scaled UP - Queue: 3522, Servers: 45, Threshold: 3520
-[Cycle 000575] BLOCKED IP: 192.168.116.30 (suspicious range)
-[Cycle 000606] Scaled UP - Queue: 3601, Servers: 46, Threshold: 3600
-[Cycle 000669] Scaled UP - Queue: 3688, Servers: 47, Threshold: 3680
-[Cycle 000714] Scaled UP - Queue: 3766, Servers: 48, Threshold: 3760
-[Cycle 000788] Scaled UP - Queue: 3847, Servers: 49, Threshold: 3840
-[Cycle 000845] Scaled UP - Queue: 3923, Servers: 50, Threshold: 3920
-[Cycle 000974] Scaled UP - Queue: 4009, Servers: 51, Threshold: 4000
-[Cycle 001001] Status - Cycle: 1000, Queue: 4048, Servers: 51
-[Cycle 001042] Scaled UP - Queue: 4084, Servers: 52, Threshold: 4080
-[Cycle 001146] Scaled UP - Queue: 4162, Servers: 53, Threshold: 4160
-[Cycle 001254] Scaled UP - Queue: 4243, Servers: 54, Threshold: 4240
-[Cycle 001550] Scaled UP - Queue: 4322, Servers: 55, Threshold: 4320
-[Cycle 001622] Scaled UP - Queue: 4402, Servers: 56, Threshold: 4400
-[Cycle 002001] Status - Cycle: 2000, Queue: 4363, Servers: 56
-[Cycle 003001] Status - Cycle: 3000, Queue: 4138, Servers: 56
-[Cycle 004001] Status - Cycle: 4000, Queue: 3788, Servers: 56
-[Cycle 005001] Status - Cycle: 5000, Queue: 3664, Servers: 56
-[Cycle 006001] Status - Cycle: 6000, Queue: 3521, Servers: 56
-[Cycle 006599] BLOCKED IP: 192.168.189.178 (suspicious range)
-[Cycle 007001] Status - Cycle: 7000, Queue: 3446, Servers: 56
-[Cycle 008001] Status - Cycle: 8000, Queue: 3333, Servers: 56
-[Cycle 009001] Status - Cycle: 9000, Queue: 2972, Servers: 56
-[Cycle 010000] Simulation completed - Final queue: 2905, Final servers: 56
-[Cycle 000000] LoadBalancer initialized with 10 servers
-[Cycle 000000] Starting simulation for 10000 cycles
-[Cycle 000001] Status - Cycle: 0, Queue: 1001, Servers: 10
-[Cycle 000010] Scaled UP - Queue: 1098, Servers: 11, Threshold: 800
-[Cycle 000020] Scaled UP - Queue: 1189, Servers: 12, Threshold: 880
-[Cycle 000030] Scaled UP - Queue: 1280, Servers: 13, Threshold: 960
-[Cycle 000040] Scaled UP - Queue: 1354, Servers: 14, Threshold: 1040
-[Cycle 000050] Scaled UP - Queue: 1432, Servers: 15, Threshold: 1120
-[Cycle 000060] Scaled UP - Queue: 1497, Servers: 16, Threshold: 1200
-[Cycle 000070] Scaled UP - Queue: 1559, Servers: 17, Threshold: 1280
-[Cycle 000080] Scaled UP - Queue: 1631, Servers: 18, Threshold: 1360
-[Cycle 000090] Scaled UP - Queue: 1708, Servers: 19, Threshold: 1440
-[Cycle 000100] Scaled UP - Queue: 1757, Servers: 20, Threshold: 1520
-[Cycle 000110] Scaled UP - Queue: 1837, Servers: 21, Threshold: 1600
-[Cycle 000120] Scaled UP - Queue: 1883, Servers: 22, Threshold: 1680
-[Cycle 000130] Scaled UP - Queue: 1935, Servers: 23, Threshold: 1760
-[Cycle 000140] Scaled UP - Queue: 1994, Servers: 24, Threshold: 1840
-[Cycle 000150] Scaled UP - Queue: 2041, Servers: 25, Threshold: 1920
-[Cycle 000160] Scaled UP - Queue: 2114, Servers: 26, Threshold: 2000
-[Cycle 000170] Scaled UP - Queue: 2175, Servers: 27, Threshold: 2080
-[Cycle 000180] Scaled UP - Queue: 2233, Servers: 28, Threshold: 2160
-[Cycle 000190] Scaled UP - Queue: 2299, Servers: 29, Threshold: 2240
-[Cycle 000200] Scaled UP - Queue: 2339, Servers: 30, Threshold: 2320
-[Cycle 000218] Scaled UP - Queue: 2407, Servers: 31, Threshold: 2400
-[Cycle 000233] Scaled UP - Queue: 2485, Servers: 32, Threshold: 2480
-[Cycle 000248] Scaled UP - Queue: 2572, Servers: 33, Threshold: 2560
-[Cycle 000267] Scaled UP - Queue: 2644, Servers: 34, Threshold: 2640
-[Cycle 000291] Scaled UP - Queue: 2725, Servers: 35, Threshold: 2720
-[Cycle 000318] Scaled UP - Queue: 2803, Servers: 36, Threshold: 2800
-[Cycle 000339] Scaled UP - Queue: 2882, Servers: 37, Threshold: 2880
-[Cycle 000365] Scaled UP - Queue: 2962, Servers: 38, Threshold: 2960
-[Cycle 000391] Scaled UP - Queue: 3043, Servers: 39, Threshold: 3040
-[Cycle 000414] Scaled UP - Queue: 3123, Servers: 40, Threshold: 3120
-[Cycle 000448] Scaled UP - Queue: 3201, Servers: 41, Threshold: 3200
-[Cycle 000465] Scaled UP - Queue: 3281, Servers: 42, Threshold: 3280
-[Cycle 000487] Scaled UP - Queue: 3361, Servers: 43, Threshold: 3360
-[Cycle 000513] Scaled UP - Queue: 3446, Servers: 44, Threshold: 3440
-[Cycle 000563] Scaled UP - Queue: 3525, Servers: 45, Threshold: 3520
-[Cycle 000602] Scaled UP - Queue: 3606, Servers: 46, Threshold: 3600
-[Cycle 000632] Scaled UP - Queue: 3681, Servers: 47, Threshold: 3680
-[Cycle 000700] Scaled UP - Queue: 3765, Servers: 48, Threshold: 3760
-[Cycle 000725] Scaled UP - Queue: 3847, Servers: 49, Threshold: 3840
-[Cycle 000792] Scaled UP - Queue: 3926, Servers: 50, Threshold: 3920
-[Cycle 000883] Scaled UP - Queue: 4001, Servers: 51, Threshold: 4000
-[Cycle 000969] Scaled UP - Queue: 4081, Servers: 52, Threshold: 4080
-[Cycle 001001] Status - Cycle: 1000, Queue: 4075, Servers: 52
-[Cycle 001076] Scaled UP - Queue: 4161, Servers: 53, Threshold: 4160
-[Cycle 001180] Scaled UP - Queue: 4241, Servers: 54, Threshold: 4240
-[Cycle 001804] Scaled UP - Queue: 4321, Servers: 55, Threshold: 4320
-[Cycle 002001] Status - Cycle: 2000, Queue: 4303, Servers: 55
-[Cycle 003001] Status - Cycle: 3000, Queue: 4196, Servers: 55
-[Cycle 004001] Status - Cycle: 4000, Queue: 4273, Servers: 55
-[Cycle 005001] Status - Cycle: 5000, Queue: 4143, Servers: 55
-[Cycle 006001] Status - Cycle: 6000, Queue: 4036, Servers: 55
-[Cycle 007001] Status - Cycle: 7000, Queue: 3979, Servers: 55
-[Cycle 008001] Status - Cycle: 8000, Queue: 4091, Servers: 55
-[Cycle 009001] Status - Cycle: 9000, Queue: 4089, Servers: 55
-[Cycle 010000] Simulation completed - Final queue: 4196, Final servers: 55
+[Cycle 000130] Scaled UP - Queue: 1948, Servers: 23, Threshold: 1760
+[Cycle 000140] Scaled UP - Queue: 2002, Servers: 24, Threshold: 1840
+[Cycle 000150] Scaled UP - Queue: 2048, Servers: 25, Threshold: 1920
+[Cycle 000160] Scaled UP - Queue: 2106, Servers: 26, Threshold: 2000
+[Cycle 000170] Scaled UP - Queue: 2154, Servers: 27, Threshold: 2080
+[Cycle 000180] Scaled UP - Queue: 2211, Servers: 28, Threshold: 2160
+[Cycle 000190] Scaled UP - Queue: 2247, Servers: 29, Threshold: 2240
+[Cycle 000204] Scaled UP - Queue: 2326, Servers: 30, Threshold: 2320
+[Cycle 000221] Scaled UP - Queue: 2405, Servers: 31, Threshold: 2400
+[Cycle 000235] Scaled UP - Queue: 2490, Servers: 32, Threshold: 2480
+[Cycle 000259] Scaled UP - Queue: 2562, Servers: 33, Threshold: 2560
+[Cycle 000278] Scaled UP - Queue: 2641, Servers: 34, Threshold: 2640
+[Cycle 000303] Scaled UP - Queue: 2723, Servers: 35, Threshold: 2720
+[Cycle 000330] Scaled UP - Queue: 2804, Servers: 36, Threshold: 2800
+[Cycle 000352] Scaled UP - Queue: 2891, Servers: 37, Threshold: 2880
+[Cycle 000373] Scaled UP - Queue: 2966, Servers: 38, Threshold: 2960
+[Cycle 000391] Scaled UP - Queue: 3041, Servers: 39, Threshold: 3040
+[Cycle 000419] Scaled UP - Queue: 3124, Servers: 40, Threshold: 3120
+[Cycle 000443] Scaled UP - Queue: 3204, Servers: 41, Threshold: 3200
+[Cycle 000475] Scaled UP - Queue: 3282, Servers: 42, Threshold: 3280
+[Cycle 000503] Scaled UP - Queue: 3363, Servers: 43, Threshold: 3360
+[Cycle 000540] Scaled UP - Queue: 3445, Servers: 44, Threshold: 3440
+[Cycle 000572] Scaled UP - Queue: 3523, Servers: 45, Threshold: 3520
+[Cycle 000615] Scaled UP - Queue: 3602, Servers: 46, Threshold: 3600
+[Cycle 000651] Scaled UP - Queue: 3683, Servers: 47, Threshold: 3680
+[Cycle 000686] Scaled UP - Queue: 3762, Servers: 48, Threshold: 3760
+[Cycle 000728] Scaled UP - Queue: 3841, Servers: 49, Threshold: 3840
+[Cycle 000819] Scaled UP - Queue: 3923, Servers: 50, Threshold: 3920
+[Cycle 000936] Scaled UP - Queue: 4001, Servers: 51, Threshold: 4000
+[Cycle 001001] Status - Cycle: 1000, Queue: 4049, Servers: 51
+[Cycle 001029] Scaled UP - Queue: 4081, Servers: 52, Threshold: 4080
+[Cycle 001208] Scaled UP - Queue: 4162, Servers: 53, Threshold: 4160
+[Cycle 001728] Scaled UP - Queue: 4241, Servers: 54, Threshold: 4240
+[Cycle 001806] Scaled UP - Queue: 4324, Servers: 55, Threshold: 4320
+[Cycle 002001] Status - Cycle: 2000, Queue: 4290, Servers: 55
+[Cycle 002446] Scaled UP - Queue: 4401, Servers: 56, Threshold: 4400
+[Cycle 003001] Status - Cycle: 3000, Queue: 4378, Servers: 56
+[Cycle 004001] Status - Cycle: 4000, Queue: 4198, Servers: 56
+[Cycle 005001] Status - Cycle: 5000, Queue: 4126, Servers: 56
+[Cycle 006001] Status - Cycle: 6000, Queue: 3851, Servers: 56
+[Cycle 006571] BLOCKED IP: 192.168.149.214 (suspicious range)
+[Cycle 007001] Status - Cycle: 7000, Queue: 3684, Servers: 56
+[Cycle 008001] Status - Cycle: 8000, Queue: 3304, Servers: 56
+[Cycle 009001] Status - Cycle: 9000, Queue: 3078, Servers: 56
+[Cycle 009005] BLOCKED IP: 192.168.135.105 (suspicious range)
+[Cycle 009856] Scaled DOWN - Queue: 2790, Servers: 55, Threshold: 2800
+[Cycle 010000] Simulation completed - Final queue: 2841, Final servers: 55
