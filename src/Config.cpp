@@ -1,3 +1,10 @@
+/**
+ * @file Config.cpp
+ * @brief Implementation of Config class for configuration file management
+ * @author Kamryn Schock
+ * @date March 2026
+ */
+
 #include "Config.h"
 #include <fstream>
 #include <iostream>

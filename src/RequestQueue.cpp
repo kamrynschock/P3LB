@@ -1,3 +1,10 @@
+/**
+ * @file RequestQueue.cpp
+ * @brief Implementation of RequestQueue class for FIFO request management
+ * @author Kamryn Schock
+ * @date March 2026
+ */
+
 #include "RequestQueue.h"
 
 void RequestQueue::enqueue(const Request& request) {

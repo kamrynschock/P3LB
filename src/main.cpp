@@ -1,7 +1,22 @@
+/**
+ * @file main.cpp
+ * @brief Main driver program for Load Balancer simulation
+ * @author Kamryn Schock
+ * @date March 2026
+ */
+
 #include <iostream>
 #include <filesystem>
 #include "LoadBalancer.h"
 
+/**
+ * @brief Main function that runs the load balancer simulation
+ * 
+ * Prompts user for input parameters, validates them, and starts
+ * the load balancer simulation with specified settings.
+ * 
+ * @return 0 on success, 1 on error
+ */
 int main() {
     // Create logs directory if it doesn't exist
     std::filesystem::create_directories("logs");

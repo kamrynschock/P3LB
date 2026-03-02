@@ -1,3 +1,10 @@
+/**
+ * @file WebServer.cpp
+ * @brief Implementation of WebServer class for individual server management
+ * @author Kamryn Schock
+ * @date March 2026
+ */
+
 #include "WebServer.h"
 
 WebServer::WebServer(int id)

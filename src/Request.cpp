@@ -1,3 +1,10 @@
+/**
+ * @file Request.cpp
+ * @brief Implementation of Request class for web request representation
+ * @author Kamryn Schock
+ * @date March 2026
+ */
+
 #include "Request.h"
 
 Request::Request(const std::string& ipIn, 

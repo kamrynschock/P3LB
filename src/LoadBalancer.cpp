@@ -1,3 +1,10 @@
+/**
+ * @file LoadBalancer.cpp
+ * @brief Implementation of LoadBalancer class for managing web servers and requests
+ * @author Kamryn Schock
+ * @date March 2026
+ */
+
 #include "LoadBalancer.h"
 #include "Config.h"
 #include <iostream>
@@ -7,6 +14,7 @@
 #include <iomanip>
 #include <filesystem>
 
+// Color constants for terminal output
 const std::string RED = "\033[31m";
 const std::string GREEN = "\033[32m";
 const std::string YELLOW = "\033[33m";
